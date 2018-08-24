@@ -1,4 +1,1 @@
-handle = open("text-write.txt", "w")
-
-handle.write("Hello Moringa")
-handle.close()
+# print("Hello world")
