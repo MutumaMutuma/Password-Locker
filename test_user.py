@@ -51,6 +51,17 @@ class Credentials:
 	'''
     credential_list = []
     user_credential_list = []
-    pass    
+    
+    @classmethod
+
+    def check_for_user(cls, account, username, password):
+	'''
+	Method that checks if the name and password entered match entries in the users_list
+	'''
+	current_user = ''
+	for user in User.users_list:
+		if (user.first_name == first_name and user.password == password):
+			current_user = user.first_name
+	return current_user    
 if __name__ == '__main__':
     unittest.main()
