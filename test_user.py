@@ -44,6 +44,13 @@ class TestUser(unittest.TestCase):
             User.user_list = []
 
 class Credentials:
+    '''
+	Class to create  account credentials, like usernames and the type of accounts the passwords are created for generate passwords and save their information
+    so ill make empty arrays to store the created passwords and usernames
+    #Quick alert,
+	'''
+    credential_list = []
+    user_credential_list = []
     pass    
 if __name__ == '__main__':
     unittest.main()
