@@ -29,7 +29,7 @@ class TestUser(unittest.TestCase):
     def test_save_multiple_user(self):
             '''
             test_save_multiple_contact to check if we can save multiple user
-            objects to our contact_list
+            objects to our contact_list ueegfu
             '''
             self.new_user.save_user()
             test_user =User("Instagram", "Suwa", "12345") # new user
