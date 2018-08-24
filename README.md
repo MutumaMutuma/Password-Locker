@@ -46,11 +46,11 @@ To install this project you need the following:
 
 To see the expected results tou run this project in python shell by running
 
-python3.6
+```python3.6```
 
 Or
 
-$ python3.6 passlocker.py
+```$ python3.6 passlocker.py```
 
 ### Break down into end to end tests
 
