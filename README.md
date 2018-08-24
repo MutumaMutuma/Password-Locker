@@ -43,7 +43,7 @@ python3.6
 ```
 Or
 ```
-python3.6 passlocker.py
+$ python3.6 passlocker.py
 ```
 ### Break down into end to end tests
 
@@ -51,7 +51,7 @@ By the end you will have logged into the account and created random passwords fo
 
 ## Built With
 
-* [Pthon 3.6](https://docs.python.org/3.6/)
+* [Python 3.6](https://docs.python.org/3.6/)
 
 ## Future expectations
 
