@@ -24,11 +24,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 To install this project you need the following:
 
-```* A Github account
+```* A Github account```
 
-* A Terminal
+```* A Terminal```
 
-*Pyhon3.6```
+```*Pyhon3.6```
 
 ### Installing
 
@@ -46,11 +46,11 @@ To install this project you need the following:
 
 To see the expected results tou run this project in python shell by running
 
-```python3.6```
+python3.6
 
 Or
 
-```$ python3.6 passlocker.py```
+$ python3.6 passlocker.py
 
 ### Break down into end to end tests
 
