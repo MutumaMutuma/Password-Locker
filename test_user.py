@@ -6,7 +6,7 @@ class TestUser(unittest.TestCase):
     '''
     Test class that defines test cases for the user class behaviours.
 
-    Args:
+    Argumentss:
         unittest.TestCase: TestCase class that helps in creating test cases
     '''
     # Items up here .......
