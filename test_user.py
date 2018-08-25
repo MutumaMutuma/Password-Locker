@@ -59,9 +59,10 @@ class Credentials:
 	Method that checks if the name and password entered match entries in the users_list
 	'''
 	current_user = ''
-	for user in User.users_list:
-		if (user.first_name == first_name and user.password == password):
+	for user in user.users_list:
+		if (user.first_name == account and user.password == password):
 			current_user = user.first_name
 	return current_user    
+    
 if __name__ == '__main__':
     unittest.main()
