@@ -16,7 +16,5 @@ class User :
         '''
 
         User.user_list.append(self)
-print("\033[1;35;40m Bright Green  \n")
-print("\033[5;37;40m Negative Colour\033[0;37;40m\n")
-print("\033[1;37;40m Bright Colour\033[0;37;40m \n")
-print("\033[1;35;40m Bright Magenta ")
+    def delete_user(self):
+        User.user_list.remove(self)
