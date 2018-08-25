@@ -44,13 +44,9 @@ To install this project you need the following:
 
 ## Running the tests
 
-To see the expected results tou run this project in python shell by running
+To see the expected results tou should run the function below to in the Terminal
 
-```python3.6```
-
-Or
-
-```$ python3.6 passlocker.py```
+```./display.py```
 
 ### Break down into end to end tests
 
