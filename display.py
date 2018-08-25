@@ -1,2 +1,4 @@
-#!/usr/bin/env python3.6   ----->The shebang starts with #! and points to the python Interpreter the application is using 
+#!/usr/bin/env python3.6
 import pyperclip
+from user import User
+
