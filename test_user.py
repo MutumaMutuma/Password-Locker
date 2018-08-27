@@ -56,76 +56,20 @@ class TestUser(unittest.TestCase):
         self.new_user.delete_user()
         self.assertEqual(len(User.user_list), 1)
         #---------------------------------------------------------------------------------
-    # def test_find_user_by_account(self):
-    #     self.new_user.save_user()
-    #     test_user = User("Instagram", "Suwa", "12345")
-    #     test_user.save_user()
+    def test_find_user_by_account(self):
 
-    #     found_user = User.find_user_by_account("Instagram")
+        self.new_user.save_user()
+        test_user = User("Instagram", "Suwa", "12345")
+        test_user.save_user()
 
-    #     self.assertEqual(found_user.account, test_user.account)
-    #---------------------------------------------------------------
-# class Credential:
-# 	'''
-# 	Class to create  account credentials, generate passwords and save their information
-# 	'''
-# 	# Class Variables
-# 	credentials_list =[]
-# 	user_credentials_list = []
-# 	@classmethod
-# 	def check_user(cls,first_name,password):
-# 		'''
-# 		Method that checks if the name and password entered match entries in the users_list
-# 		'''
-# 		current_user = ''
-# 		for user in User.user_list:
-# 			if (user.first_name == first_name and user.password == password):
-# 				current_user = user.first_name
-# 		return current_user
+        found_user = User.find_by_account("Instagram")
 
-# 	def __init__(self,user_name,media_page,account_name,password):
-# 		'''
-# 		Method to define the properties for each user object will hold.
-# 		'''
+        self.assertEqual(found_user.username, test_user.username)
+    def test_user_exists(self):
+        self.new_user.save_user()
+        test_user = User("Instagram", "Suwa", "12345")
+        test_user.save_user()
 
-# 		# instance variables
-# 		self.user_name = user_name
-# 		self.media_page = media_page
-# 		self.account_name = account_name
-# 		self.password = password
+        user_exists = User.user_exist("Instagram")
 
-# 	def save_credentials(self):
-# 		'''
-# 		Function to save a newly created user instance
-# 		'''
-# 		# global users_list
-# 		Credential.credentials_list.append(self)
-# 	string = ''
-# 	def generate_password(self, size=10, char=string.ascii_uppercase+string.ascii_lowercase+string.digits):
-# 		'''
-# 		Function to generate an 8 character password for a credential
-# 		'''
-# 		gen_pass=''.join(random.choice(char) for _ in range(size))
-# 		return gen_pass
-
-# 	@classmethod
-# 	def display_credentials(cls,user_name):
-# 		'''
-# 		Class method to display the list of credentials saved
-# 		'''
-# 		user_credentials_list = []
-# 		for credential in cls.credentials_list:
-# 			if credential.user_name == user_name:
-# 				user_credentials_list.append(credential)
-# 		return user_credentials_list
-				
-
-	
-# 	@classmethod
-# 	def find_by_site_name(cls, media_page):
-# 		'''
-# 		Method that takes in a media_page and returns a credential that matches that media_page.
-# 		'''
-# 		for credential in cls.credentials_list:
-# 			if credential.media_page == media_page:
-# 				return credential
+        self.assertTrue(user_exists)
