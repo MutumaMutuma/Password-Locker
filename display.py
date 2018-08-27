@@ -18,8 +18,8 @@ def find_user(account):
     return User.find_by_account(account)
 def check_existing_user(account):
     return User.user_exist(account)
-# def display_users():
-#     return User.display_users()
+def display_users():
+    return User.display_users()
 #------------------------------------------------------------
 def main():
     print("\033[1;36;1m PASSWORD LOCKER App\n")
@@ -34,7 +34,7 @@ def main():
     # print("\033[1;35;1m Log -> To log in\n")
     # print("\033[1;35;1m ex -> Exit\n")
     while True:
-        print("Use these short codes : cc - create an account\n dc - display username\nfc -find a user\nex -exit the user list ")
+        print("Use these short codes : \n cc - create an account\n dc - display username\nfc -find a user\nex -exit the user list ")
         print(" ")
         short_code = input('Enter : ').lower().strip()
         if short_code == 'cc':
@@ -53,7 +53,13 @@ def main():
             print("\033[1;31;1m You have successfully saved your Credentials \n")
             print("\033[1;32;1m  \n")
         elif short_code == "dc":
-            print("Displayed")
-
+            if display_users():
+                print("Here is a list of all your Accounts")
+                print("\n")
+                for user in display_users():
+                    print("Site: {user.account} - User Name: {user.username} - Password: {user.password}")
+            else:
+                print(" ")
+                print("You don't seem to have any accounts created yet")       
 if __name__ == '__main__':
 	main()

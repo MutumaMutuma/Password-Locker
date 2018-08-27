@@ -73,3 +73,5 @@ class TestUser(unittest.TestCase):
         user_exists = User.user_exist("Instagram")
 
         self.assertTrue(user_exists)
+    def test_display_all_users(self):
+        self.assertEqual(User.display_users(), User.user_list)
