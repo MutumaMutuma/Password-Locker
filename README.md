@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 * You must have a Github account, Then follow this link to my github repository
 
-```https://github.com/MutumaMutuma/Password-Locker#password-locker```
+```https://github.com/MutumaMutuma/Password-Locker```
 
 * Clone the project into your laptop or desktop by running the command below
 
