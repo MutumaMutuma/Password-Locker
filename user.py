@@ -32,4 +32,9 @@ class User :
         return False
     @classmethod
     def display_users(cls):
-        return cls.user.list
+        return cls.user_list
+
+    @classmethod
+    def display_user(cls):
+        for user in cls.user_list:
+            return user

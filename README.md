@@ -14,7 +14,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ```https://github.com/MutumaMutuma/Password-Locker#password-locker```
 
-* Clone the project into your laptop or desktop by running th command below
+* Clone the project into your laptop or desktop by running the command below
 
 ```https://github.com/MutumaMutuma/Password-Locker.git```
 
